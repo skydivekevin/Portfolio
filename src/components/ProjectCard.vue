@@ -1,10 +1,11 @@
 <template>
-
+<b-col>
   <li v-on:click='showInfoToggle'>
     <div class="project-card">
       <header class="project-title">
-        <img :src=project.image>
         <h2>{{project.name}}</h2>
+        <img :src=project.image>
+        
         <!-- <img :src=image>   This will be a screenshot for the project -->
         <!-- <h2>{{project.name}}</h2>    This will be the name of the project -->    
       </header>
@@ -21,6 +22,7 @@
       </section>
   </div>
   </li>
+  </b-col>
 </template>
 
 <script>
@@ -40,4 +42,17 @@ export default {
   props: ['project']
 };
 </script>
+<style scoped>
+li {
+  list-style: none;
+}
+img {
+  width: 30%;
+  margin: 0 10px 0 10px;
+  /* padding-left: 10%;
+  padding-right: 10%;  */
+  /* border: 1px solid darkgrey; */
+}
+</style>
+
 

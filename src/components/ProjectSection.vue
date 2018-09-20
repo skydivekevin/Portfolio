@@ -1,12 +1,8 @@
 <template>
- 
-      <section id="projects-container">
-          <h2>Projects</h2>
-          <ul id="projects">
-              <ProjectCard v-for="(project, index) in projects" v-bind:key='"project" + index' :project='project'/>
-    </ul>
-  </section>
 
+  <b-row id="projects-container">
+    <ProjectCard v-for="(project, index) in projects" v-bind:key='"project" + index' :project='project'/>
+  </b-row>
 </template>
 
 <script>
@@ -16,19 +12,16 @@ export default {
   components: {
     ProjectCard
   },
-
   data() {
     return {
       projects: []
     };
   },
-
   mounted() {
     let apiURL = './static/projects.json';
     fetch(apiURL)
       .then(response => response.json())
       .then(result => {
-        // console.log(result);
         return (this.projects = result);
       });
   }
@@ -36,6 +29,14 @@ export default {
 </script>
 
 <style scoped>
+/* Currently not doing anything... */
+/* section {
+  max-width: 1em;
+} */
+#projects-container {
+  max-width: 80%;
+  /* justify-content: center; */
+}
 </style>
 
 
