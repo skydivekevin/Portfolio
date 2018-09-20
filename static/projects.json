@@ -1,0 +1,32 @@
+[
+  {
+    "name": "RGB Game",
+    "image": "./static/assets/Project1.png",
+    "info": "I had such a great time working on the project",
+    "stack": [
+      "javaScript",
+      "jQuery",
+      "CSS"
+    ]
+  },
+  {
+    "name": "Project 2",
+    "image": "./static/assets/Project2.png",
+    "info": "I had such a great time working on the project",
+    "stack": [
+      "vue"
+    ]
+  },
+  {
+    "name": "Project 3",
+    "image": "./static/assets/Project3.png",
+    "info": "I had such a great time working on the project",
+    "stack": [
+      "Stuff",
+      "Things",
+      "Cool Tech",
+      "Git and Github",
+      "Agile"
+    ]
+  }
+]
