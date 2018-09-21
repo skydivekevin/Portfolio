@@ -43,6 +43,10 @@ import AboutMe from './components/AboutMe';
 import Contact from './components/Contact';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
+import Router from 'vue-router';
+// use router
+
+Vue.use(Router);
 
 Vue.use(BootstrapVue);
 

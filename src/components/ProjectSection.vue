@@ -1,7 +1,7 @@
 <template>
 
   
-  <div id="projects-container" class="flex-grid">
+  <div id="projects-container">
     
     <ProjectCard v-for="(project, index) in projects" v-bind:key='"project" + index' :project='project'/>
 
@@ -39,12 +39,14 @@ export default {
 
 #projects-container {
   display: flex;
+  justify-content: space-around;
   flex-direction: row;
   color: black;
   background-color: white;
   height: 100vh;
   width: 100%;
-  justify-content: center;
+
+  padding-top: 10%;
 }
 </style>
 

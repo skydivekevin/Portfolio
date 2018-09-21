@@ -1,6 +1,6 @@
 <template>
 
-  <div class="col">
+  <div>
 
   <div v-on:click='showInfoToggle'>     
         <h2>{{project.name}}</h2>
@@ -34,13 +34,9 @@ div div div {
   width: 15vw;
 }
 
-.col {
-  display: flex;
-  /* flex: 1; */
-}
 img {
   max-width: 100%;
-  display: flex;
+
   max-height: 40vh;
 }
 </style>
