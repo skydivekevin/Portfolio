@@ -1,8 +1,11 @@
 <template>
 
-  <b-row id="projects-container">
+  
+  <div id="projects-container" class="flex-grid">
+    
     <ProjectCard v-for="(project, index) in projects" v-bind:key='"project" + index' :project='project'/>
-  </b-row>
+
+  </div>
 </template>
 
 <script>
@@ -17,6 +20,7 @@ export default {
       projects: []
     };
   },
+
   mounted() {
     let apiURL = './static/projects.json';
     fetch(apiURL)
@@ -29,13 +33,18 @@ export default {
 </script>
 
 <style scoped>
-/* Currently not doing anything... */
-/* section {
-  max-width: 1em;
-} */
+#title {
+  margin-bottom: 4em;
+}
+
 #projects-container {
-  max-width: 80%;
-  /* justify-content: center; */
+  display: flex;
+  flex-direction: row;
+  color: black;
+  background-color: white;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
 }
 </style>
 

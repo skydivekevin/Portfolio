@@ -13,7 +13,6 @@ export default {
 
 <style scoped>
 small {
-  color: white;
-  margin-bottom: -40px;
+  color: black;
 }
 </style>
